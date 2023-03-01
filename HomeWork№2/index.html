@@ -1,4 +1,4 @@
-                                                            <!-- [Ulianovych Oleksandr] — Практика №2 — Підключення стилів та верстка таблиць -->
+<!-- [Ulianovych Oleksandr] — Практика №2 — Підключення стилів та верстка таблиць -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johannes Itten</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <h1>Johannes Itten</h1>
@@ -63,9 +64,9 @@
     <figure>
       <img src="image/Farbkreis_Itten_1961.png" />
       <figcaption>
-        <em>Color sphere by Johannes Itten (1961)</em><br>
-        <br>
-        Download the picture: <br>
+        <em>Color sphere by Johannes Itten (1961)</em><br />
+        <br />
+        Download the picture: <br />
         <a
           href="https://drive.google.com/file/d/13nR5N04okp2COPmxGct9qqHHQMWFKM_E/view?usp=sharing "
           >https://drive.google.com/file/d/13nR5N04okp2COPmxGct9qqHHQMWFKM_E/view?usp=sharing</a
@@ -106,8 +107,75 @@
       </li>
     </ul>
     <p>
-      <strong>The original article:</strong> 
-      <a href="https://en.wikipedia.org/wiki/Johannes_Itten">https://en.wikipedia.org/wiki/Johannes_Itten</a>  
+      <strong>The original article:</strong>
+      <a href="https://en.wikipedia.org/wiki/Johannes_Itten"
+        >https://en.wikipedia.org/wiki/Johannes_Itten</a
+      >
     </p>
+
+    <table>
+      <caption>
+        Список покупок
+      </caption>
+
+      <thead>
+        <tr>
+          <td class="col-1">Назва покупки</td>
+          <td class="col-2">Колір</td>
+          <td class="col-3">
+            Кількість <br />
+            товарів
+          </td>
+          <td class="col-4">Ціна</td>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <td colspan="2" class="col-1">Всього</td>
+          <td class="col-3">2 товари</td>
+          <td class="col-4">97000 грн</td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td class="col-1">iPhone 13</td>
+          <td class="col-2">Червоний</td>
+          <td class="col-3">1</td>
+          <td class="col-4">33000 грн</td>
+        </tr>
+        <tr>
+          <td class="col-1">iMac</td>
+          <td class="col-2">Сріблястий</td>
+          <td class="col-3">1</td>
+          <td class="col-4">64000 грн</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--Друга таблиця -->
+    <table class="t2">
+      <tr>
+        <td></td>
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td rowspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
   </body>
 </html>
