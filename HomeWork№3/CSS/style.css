@@ -71,7 +71,7 @@ nav {
 }
 
 :visited {
-    color: #4b6d85;
+    color: #0B257D;
 }
 
                                                /*  ARTICLE   */
@@ -113,10 +113,17 @@ ol {
 }
 
 ol > li {
-    background: #EFFAFF;
     padding: 10px;
     border-bottom: 1px solid #89B8C2;  
     padding-left: 30px;
+}
+
+ol > li:nth-child(odd) {
+    background: #EFFAFF;
+}
+
+ol > li:nth-child(4) {
+    background: #F7FFEF;
 }
 
 ol > li::before {
@@ -199,7 +206,7 @@ footer {
     }
 
     body {
-        margin: 24px 24px 16px;
+        margin: 25px 25px 30px;
     }
 
     nav {
@@ -278,13 +285,13 @@ footer {
     }
 
     body {
-        margin: 24px 24px 16px;
+        margin: 65px 70px 40px;
     }
 
     nav {
         padding-bottom: 0;
-                                            
-        display: inline-block;
+        display: flex;
+        justify-content: center;
     }
 
     .nav-caption {
@@ -307,8 +314,7 @@ footer {
     article,
     footer {
         margin-right: auto;
-        margin-left: auto;
-        max-width: 680px;
+        margin-left: auto; 
     }
 
     article {
@@ -318,10 +324,11 @@ footer {
     figure {
         margin-top: 8px;
         padding: 20px;
+        border-radius: 8px;
     }
 
     figure > img {
-        border-radius: 12px;
+        border-radius: 4px 12px 4px 28px;;
     }
 
     figcaption {   
