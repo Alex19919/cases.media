@@ -10,9 +10,160 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,700;1,700&family=Noto+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .ui-section {
+            margin-bottom: 9rem;
+        }
+        @media screen and (min-width: 721px) {
+            .ui-section {
+                margin-bottom: 12rem;
+            }   
+        }
+        .ui-grid > * {
+            color: var(--color-red);
+            background: var(--color-light-purple);
+            padding: 1rem;
+        }
+        @media screen and (min-width: 721px) {
+            .ui-grid > * {
+                padding: 2rem;
+            }
+        }
+    </style>
     <title>UI Kit</title>
 </head>
 <body>
     
+    <div class="layout-content">
+        <div class="layout-container">
+
+            <h1 class="mb-3">Інтерфейсний комплект</h1>
+
+            <section class="ui-section">
+                <h2 class="h4 h-sup mb-4">Сітка</h2>
+
+                <h3 class="d-none d-desk-block my-4">Дванадцять колонок (комп'ютерна)</h3>
+
+                <div class="d-none d-desk-grid grid ui-grid f-small ta-center">
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+
+                    <div class="col-span-12">.col-span-12</div>
+
+                    <div class="col-span-11">.col-span-11</div>
+                    <div>-</div>
+
+                    <div class="col-span-10">.col-span-10</div>
+                    <div class="col-span-2">.col-span-2</div>
+
+                    <div class="col-span-9">.col-span-9</div>
+                    <div class="col-span-3">.col-span-3</div>
+
+                    <div class="col-span-8">.col-span-8</div>
+                    <div class="col-span-4">.col-span-4</div>
+
+                    <div class="col-span-7">.col-span-7</div>
+                    <div class="col-span-5">.col-span-5</div>
+
+                    <div class="col-span-6">.col-span-6</div>
+                    <div class="col-span-6">.col-span-6</div>
+                </div>
+            </section>
+
+
+
+            <section class="ui-section">
+                <div class="grid grid-cols-1 grid-desk-cols-12 gy-4">
+
+                    <div class="col-span-desk-6">
+                        <h2 class="h4 h-sup mb-4">Типографія</h2>
+
+                        <div class="h1">Заголовок H1</div>
+                        <div class="h2">Заголовок H2</div>
+                        <div class="h3">Заголовок H3</div>
+
+                        <p>                 
+                            Базовий текст. Курс «Основи фронтенду. HTML та CSS» — важливий перший крок для опанування фаху фронтенд-розробника. На курсі ми пройдемо шлях від знайомства з загальними принципами верстки вебпроєктів до створення адаптивної посадкової сторінки. 
+                        </p>
+
+                        <p>
+                            <em>Похилений нарис.</em>
+                        </p>
+
+                        <div class="h3">Заголовок H3</div>
+
+                        <p> 
+                            Базовий текст. Курс «Основи фронтенду. HTML та CSS» — важливий перший крок для опанування фаху фронтенд-розробника. На курсі ми пройдемо шлях від знайомства з загальними принципами верстки вебпроєктів до створення адаптивної посадкової сторінки.
+                        </p>
+
+                        <p class="f-small">
+                            В деяких випадках використовується трохи зменшений текст.
+                        </p>
+
+                        <p>
+                            <strong>    
+                                Також в цьому проєкті передбачено насичену версію текстів.
+                            </strong>
+                        </p>
+
+                        <div class="h4 h-sup">Надзаголовок</div>
+
+                        <p>
+                            Використовується для маркування груп елементів в інтерфейсному комплекті.
+                        </p>
+                    </div>
+
+                    <div class="col-start-desk-8 col-span-desk-4">
+                        <h2 class="h4 h-sup mb-4">Посилання</h2>
+
+                        <div class="grid grid-cols-2 gy-4">
+                            <div class="col-span-2 col-span-tab-1 col-span-desk-2">
+                                <h3 class="mb-4">На світлому тлі</h3>
+
+                                <div class="fw-700 bg-light-purple b-rad-1 px-2 py-1">
+                                    <div class="my-1">
+                                        <a href="#">Базовий стан посилання</a>
+                                    </div>
+                                    <div class="my-1">
+                                        <a href="https://google.com">Відвідане посилання</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-span-2 col-span-tab-1 col-span-desk-2">
+                                <h3 class="mb-4">На темному тлі</h3>
+
+                                <div class="fw-700 bg-dark-blue b-rad-1 px-2 py-1">
+                                    <div class="my-1">
+                                        <a class="l-dark" href="#">Базовий стан посилання</a>
+                                    </div>
+                                    <div class="my-1">
+                                        <a class="l-dark" href="https://google.com">Відвідане посилання</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </div>
+    </div>
+
+
 </body>
 </html>
