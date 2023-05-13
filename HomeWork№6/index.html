@@ -30,6 +30,30 @@
                 padding: 2rem;
             }
         }
+        .ui-colors {
+            grid-auto-rows: minmax(140px, auto);
+        }
+
+        .ui-colors > * {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: stretch;
+            padding: 1rem;
+        }
+        .ui-outline {
+            outline: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        @media screen and (min-width: 721px) {
+            .ui-colors > * {
+                padding: 2rem;
+            }
+        }
+        .ui-icons > * {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
     <title>UI Kit</title>
 </head>
@@ -157,6 +181,265 @@
                     </div>
                 </div>
             </section>
+
+            <section class="ui-section">
+                <h2 class="h4 h-sup mb-4">Колірна палітра</h2>
+
+                <div class="grid grid-cols-1 grid-tab-cols-2 grid-desk-cols-4 ui-colors ta-center">
+
+                    <div class="c-white bg-black b-rad-1">
+                        <div class="fw-700 mb-1">Black</div>
+                        <div class="f-small mb-1">#000000</div>
+                    </div>
+
+                    <div class="c-white bg-gray b-rad-1">
+                        <div class="fw-700 mb-1">Gray</div>
+                        <div class="f-small mb-1">#595E69</div>
+
+                    </div>
+
+                    <div class="c-black bg-gray1 b-rad-1">
+                        <div class="fw-700 mb-1">Gray1</div>
+                        <div class="f-small mb-1">#DDE1EB</div>
+
+                    </div>
+
+                    <div class="c-black bg-gray2 b-rad-1">
+                        <div class="fw-700 mb-1"> Gray 2</div>
+                        <div class="f-small mb-1">#F5F7FA</div>
+
+                    </div>
+
+                    <div class="c-white bg-heaven b-rad-1">
+                        <div class="fw-700 mb-1">Heaven</div>
+                        <div class="f-small mb-1">#1269FF</div>
+
+                    </div>
+
+                    <div class="c-white bg-blue b-rad-1">
+                        <div class="fw-700 mb-1">Blue</div>
+                        <div class="f-small mb-1">#689DFA</div>
+                    </div>
+
+                    <div class="c-white bg-light-blue b-rad-1">
+                        <div class="fw-700 mb-1">Light Blue</div>
+                        <div class="f-small mb-1">#A5C6FF</div>
+                    </div>
+
+                    <div class="c-black bg-white b-rad-1">
+                        <div class="fw-700 mb-1">White</div>
+                        <div class="f-small mb-1">#FFFFFF</div>
+                    </div>
+
+                    <div class="c-white bg-dark-blue b-rad-1">
+                        <div class="fw-700 mb-1">Dark Blue</div>
+                        <div class="f-small mb-1">#0F054C</div>
+                    </div>
+
+                    <div class="c-black bg-pink b-rad-1">
+                        <div class="fw-700 mb-1">Pink</div>
+                        <div class="f-small mb-1">#FF95CD</div>
+                    </div>
+
+                    <div class="c-black bg-light-pink b-rad-1">
+                        <div class="fw-700 mb-1">Light Pink</div>
+                        <div class="f-small mb-1">#EEC3F5</div>
+                    </div>
+
+                    <div class="c-black bg-light-purple b-rad-1">
+                        <div class="fw-700 mb-1">Light Purple</div>
+                        <div class="f-small mb-1">#EFEDFC</div>
+                    </div>
+
+                    <div class="c-black bg-bright-turquoise b-rad-1">
+                        <div class="fw-700 mb-1">Bright Turquoise</div>
+                        <div class="f-small mb-1">#69EFE9</div>
+                    </div>
+
+                    <div class="c-black bg-turquoise b-rad-1">
+                        <div class="fw-700 mb-1">Turquoise</div>
+                        <div class="f-small mb-1">#AAF3F0</div>
+                    </div>
+
+                    <div class="c-black bg-light-turquoise b-rad-1">
+                        <div class="fw-700 mb-1">Light-turquoise</div>
+                        <div class="f-small mb-1">#8F58D6</div>
+                    </div>
+
+                    <div class="c-white bg-dark-purple-gray b-rad-1">
+                        <div class="fw-700 mb-1">Dark Purple-Gray</div>
+                        <div class="f-small mb-1">#8F58D6</div>
+                    </div>
+
+                    <div class="c-white bg-red b-rad-1">
+                        <div class="fw-700 mb-1">Red</div>
+                        <div class="f-small mb-1">#FF0F0F</div>
+                    </div>
+
+                    <div class="c-white bg-transparent-black b-rad-1">
+                        <div class="fw-700 mb-1">Transparent Black</div>
+                        <div class="f-small mb-1">rgba (19, 17, 28, 0.9)</div>
+                    </div>
+
+                    <div class="c-white bg-dark-gray b-rad-1">
+                        <div class="fw-700 mb-1">Dark Gray</div>
+                        <div class="f-small mb-1">#1B1B1B</div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="ui-section">
+                <h2 class="h4 h-sup mb-4">Іконки</h2>
+
+                <div class="flex flex-auto fgy-4 ui-icons">
+
+                    <div class="bg-dark-blue b-rad-1 p-3">
+                        <span class="green-arrow-down"></span>
+                    </div>
+
+                    <div class="bg-dark-blue b-rad-1 p-3">
+                        <span class="globe-stand"></span>
+                    </div>
+
+                    <div class="bg-dark-blue b-rad-1 p-3">
+                        <span class="book-bookmark"></span>
+                    </div>
+
+                    <div class="bg-dark-blue b-rad-1 p-3">
+                        <span class="hands-clapping"></span>
+                    </div>
+
+                    <div class="bg-dark-blue b-rad-1 p-3">
+                        <span class="film-slate"></span>
+                    </div>
+
+                    <div class="bg-dark-blue b-rad-1 p-3">
+                        <span class="timer"></span>
+                    </div>
+
+                    <div class="bg-dark-blue b-rad-1 p-3">
+                        <span class="magnifying-glass"></span>
+                    </div>
+
+                    <div class="bg-gray2 b-rad-1 p-3">
+                        <span class="blue-arrow-down"></span>
+                    </div>
+
+                    <div class="bg-dark-gray b-rad-1 p-3">
+                        <div class="icon-radius">
+                            <span class="facebook"></span>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-gray b-rad-1 p-3">
+                        <div class="icon-radius">
+                            <span class="instagram"></span>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-gray b-rad-1 p-3">
+                        <div class="icon-radius">
+                            <span class="cases"></span>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-gray b-rad-1 p-3">
+                        <div class="icon-radius">
+                            <span class="telegram"></span>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-gray b-rad-1 p-3">
+                        <span class="gray-arrow-right"></span>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            <section class="ui-section">
+                <h2 class="h4 h-sup">Кнопки</h2>
+
+                <div class="grid grid-cols-1 grid-tab-cols-2 grid-desk-cols-3 ta-center">
+                    <div class="bg-light-purple b-rad-1 py-3 px-2">
+                        <div class="f f-small mb-1">Зелена кнопка</div>
+                        <div>
+                            <a href="#" class="btn-Turquoise">Зареєструватись</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-light-purple b-rad-1 py-3 px-2">
+                        <div class="f f-small mb-1">Чорна кнопка</div>
+                        <div>
+                            <a href="#" class="btn-black">Зареєструватись</a>
+                        </div>
+                    </div>
+
+                    <div class="c-white bg-dark-blue b-rad-1 py-3 px-2">
+                        <div class="f f-small mb-1">Бліла кнопка</div>
+                        <div>
+                            <a href="#" class="btn-white">Зареєструватись</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ui-section">
+                <h2 class="h4 h-sup mb-4">Фони</h2>
+
+                <div class="grid grid-cols-1 grid-tab-cols-2 g-4 ">
+                    <div class="bg-light-purple b-rad-1 grid grid-cols-1 grid-desk-cols-6 py-3">
+
+                        <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+
+                            <div class="field">
+                                <div class="f-small align-self-center mb-1">Поле введення</div>
+                                <label for="name">Ваше ім'я</label>
+                                <input id="name" type="text" class="control" placeholder="Введіть Ваше ім'я">
+                            </div>
+
+                            <div class="field error">
+                                <label for="name-error">Ваше ім'я</label>
+                                <input id="name-error" type="text" class="control" placeholder="Введіть Ваше ім'я">
+                                <p class="error-msg">Текст помилки</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-light-purple b-rad-1 grid grid-cols-1 grid-desk-cols-6 py-3">
+                        <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+
+                            <div class="field">
+                                <div class="f-small align-self-center mb-1">Поле вибору</div>
+                                <label for="region">Ваш регіон</label>
+                                <select name="region" class="control">
+                                    <option value="default" selected>Оберіть країну</option>
+                                    <option>Україна</option>
+                                    <option>Польща</option>
+                                </select>
+                                
+                                
+                            </div>
+
+                            <div class="field error">
+                                <label for="name-error">Ваше ім'я</label>
+                                <input id="name-error" type="text" class="control" placeholder="Введіть Ваше ім'я">
+                                <p class="error-msg">Текст помилки</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </section>
+
+
 
 
 
