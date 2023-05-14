@@ -58,7 +58,67 @@
     <title>UI Kit</title>
 </head>
 <body>
-    
+    <header class="layout-header">
+        <div class="layout-container">
+
+            <div class="header-wrapper">
+                <a href="https://cases.media/creativepractice" class="header-logo">
+                    <img src="img/Vector (1).svg" width="126" height="56" alt="Creative Practice">
+                </a>
+
+                <nav class="header-menu">
+                    <ul class="nav">
+                        <li class="d-none d-desk-block">
+                            <a href="#">Про курс</a>
+                        </li>
+
+                        <li class="d-none d-desk-block">
+                            <a href="#">Хто викладає</a>
+                        </li>
+
+                        <li class="dropdown d-none d-desk-block">
+                            <a href="#">Програма курсe</a>
+
+                            <div class="dropdown-wrapper">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Теорія</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Практика</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="dropdown d-desk-none">
+                            <a href="#">Меню</a>
+
+                            <div class="dropdown-wrapper dd-left dd-tab-right">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Про курс</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Хто викладає</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Програма</a>
+                                    </li>
+
+                                    <li class="btn d-tab-none">
+                                        <div>
+                                            <a href="#" class="btn-Turquoise">Зареєструватись</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <div class="layout-content">
         <div class="layout-container">
 
@@ -387,7 +447,7 @@
             </section>
 
             <section class="ui-section">
-                <h2 class="h4 h-sup mb-4">Фони</h2>
+                <h2 class="h4 h-sup mb-4">Форми</h2>
 
                 <div class="grid grid-cols-1 grid-tab-cols-2 g-4 ">
                     <div class="bg-light-purple b-rad-1 grid grid-cols-1 grid-desk-cols-6 py-3">
@@ -415,7 +475,7 @@
                                 <div class="f-small align-self-center mb-1">Поле вибору</div>
                                 <label for="region">Ваш регіон</label>
                                 <select name="region" class="control">
-                                    <option value="default" selected>Оберіть країну</option>
+                                    <option class="default" selected>Оберіть країну</option>
                                     <option>Україна</option>
                                     <option>Польща</option>
                                 </select>
@@ -424,12 +484,85 @@
                             </div>
 
                             <div class="field error">
-                                <label for="name-error">Ваше ім'я</label>
-                                <input id="name-error" type="text" class="control" placeholder="Введіть Ваше ім'я">
-                                <p class="error-msg">Текст помилки</p>
+                                <label for="region error">Ваш регіон</label>
+                                <select name="region-error" class="control">
+                                    <option class="default" selected>Оберіть країну</option>
+                                    <option>Вейшнорія</option>
+                                </select>
+                                <p class="error-msg">Країна не відома</p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="bg-light-purple b-rad-1 grid grid-cols-1 grid-desk-cols-6 py-3">
+                        <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+
+                            <div class="field">
+                                <div class="f-small align-self-center mb-1">Прапорці</div>
+                                <label>Один прапорець</label>
+                                <label class="checkbox">
+                                    <input type="checkbox">Погоджуюсь з <a href="#" class="fw-700">договором оферти</a>
+                                </label>
+                            </div>
+
+                            <div class="field">
+                                <label>Набір з кількох прапорців</label>
+                                <label class="checkbox"> 
+                                    <input type="checkbox">
+                                    Перша опція
+                                </label>
+                                <label class="checkbox"> 
+                                    <input type="checkbox">
+                                    Друга опція
+                                </label>
+                            </div>
+
+                            <div class="field error">
+                                <label>Прапорець з помилкою</label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    Погоджуюсь з <a href="#" class="fw-700">договором оферти</a>
+                                </label>
+                                <p class="error-msg">Щоб відправити форму, вам необхідно погодитись з умовами договору оферти</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-light-purple b-rad-1 grid grid-cols-1 grid-desk-cols-6 py-3">
+                        <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+
+                            <div class="field">
+                                <div class="f-small align-self-center mb-1">Перемикачі</div>
+                                <label>Набір перемикачів</label>
+                                <label class="radio">
+                                    <input type="radio"> 
+                                    Перший варіанти
+                                </label>
+                                <label class="radio">
+                                    <input type="radio"> 
+                                    Другий варіанти
+                                </label>
+                            </div>
+
+                            <div class="field error">
+                                <label>Перемикачі з помилкою</label>
+                                <label class="radio"> 
+                                    <input type="radio">
+                                    Перша опція
+                                </label>
+                                <label class="radio"> 
+                                    <input type="radio">
+                                    Друга опція
+                                </label>
+                                <p class="error-msg">Ми не схвалюємо обраний Вами варіант</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
 
 
 
@@ -439,10 +572,88 @@
 
             </section>
 
+            <section class="ui-section">
+                <h2 class="h4 h-sup mb-4">Компоненти</h2>
 
+                <div class="grid grid-cols-1 grid-desk-cols-2 gy-4">
 
+                    <article class="program">
+                        <h3 class="program-title">Теорія</h3>
 
+                        <div class="program-modules">
 
+                            <article class="module">
+                                <div class="module-info">
+                                    <h4 class="module-title">Знайомство з основними тегами</h4>
+                                    <div class="module-text">
+                                        <p>Вступ до курсу. Що таке HTML та CSS. Теги та їхні типи. Теги для розмітки тексту</p>
+                                    </div>
+                                </div>
+
+                                <div class="module-image">
+                                    <img src="img/Image.jpg" width="172" height="96">
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="program-modules">
+
+                            <article class="module">
+                                <div class="module-info">
+                                    <h4 class="module-title">Робота зі стилями</h4>
+                                    <div class="module-text">
+                                        <p>Підключення каскадних таблиць стилів CSS та форматування текстів. Робота з таблицями.</p>
+                                    </div>
+                                </div>
+
+                                <div class="module-image">
+                                    <img src="img/Image (1).jpg" width="172" height="96">
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+
+                    <div class="grid grid-cols-1 grid-tab-cols-2 grid-desk-cols-3 g-4">
+                        <div class="col-span-desk-2">
+                            <h3 class="h4 h-sup c-black mb-3">Інші курси Практики</h3>
+
+                            <ul class="linklist flex flex-col fg-2">
+                                <li>
+                                    <a href="#">Робота з Figma</a>
+                                </li>
+                                <li>
+                                    <a href="#">Основи вебдизайну</a>
+                                </li>
+                                <li>
+                                    <a href="#">Робота з Webflow</a>
+                                </li>
+                                <li>
+                                    <a href="#">Проєктування та дизайн інтерфейсів</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-span-desk-2">
+                            <h3 class="h4 h-sup c-balck mb-3">Корисні посилання</h3>
+
+                            <ul class="linklist flex flex-col fg-2">
+                                <li>
+                                    <a href="https://material.io">
+                                        <span class="icon-rarr mr-1"></span>
+                                        <span>material.io</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://getbootstrap.com">
+                                        <span class="icon-rarr mr-1"></span>
+                                        <span>getbootstrap.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
     </div>
